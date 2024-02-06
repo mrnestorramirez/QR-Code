@@ -44,19 +44,25 @@ body {
   border-radius: calc(var(--br) - 5px);
 }
 
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: var(--pd);
+}
+
 .card__bigText,
 .card__smallText {
-  padding-block: var(--pd);
   text-align: center;
 }
 
 .card__bigText {
   font-weight: 700;
   font-size: 1.4rem;
+  color: var(--dark-blue);
 }
 
 .card__smallText {
   color: var(--grayish-blue);
-  padding-inline: var(--pd);
   font-size: .95rem;
 }
